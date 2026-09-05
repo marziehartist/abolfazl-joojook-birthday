@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joojook Bucelli — LEVEL 19</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="game-screen">
+
+        <div class="scanlines"></div>
+
+
+        <!-- =========================
+             BATMAN GIF INTRO
+        ========================== -->
+
+        <section id="intro" class="intro-screen">
+
+            <img
+                src="Gifs/batman-cake.gif"
+                alt="Batman"
+                class="batman-gif"
+            >
+
+        </section>
+
+
+        <!-- =========================
+             MAIN START SCREEN
+        ========================== -->
+
+        <section id="startScreen" class="start-screen hidden">
+
+            <p class="system-text">
+                SYSTEM ONLINE...
+            </p>
+
+            <h1>
+                ابوالفضل جونم
+            </h1>
+
+            <div class="level">
+                LEVEL <span>19</span>
+            </div>
+
+            <div class="messages">
+
+                <p class="persian-message first-message">
+                    سلام جوجوک مننن، چطوری خوبیییییی؟ ❤️🐿️
+                </p>
+
+                <p class="persian-message second-message">
+                    آماده‌ی یک بازی هستییییی؟ 🎮
+                </p>
+
+            </div>
+
+            <button id="startButton">
+                ▶ PRESS START
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             PLAYER PROFILE
+        ========================== -->
+
+        <section id="playerProfile" class="player-profile hidden">
+
+            <p class="profile-label">
+             پروفایل بازیکن
+            </p>    
+
+            <h2>
+                ابوالفضل جونم
+            </h2>
+
+            <div class="profile-level">
+                LEVEL <span>19</span>
+            </div>
+
+          <div style="
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    border: 3px solid red;
+    ">
+
+    <img
+        src="./AbolfazlJoojook/Kheeshteep.png"
+        alt="TEST IMAGE"
+        style="
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        "
+    >
+
+        </div>  
+
+
+            <!-- XP -->
+
+            <div class="xp-section">
+
+                <div class="xp-title">
+                    XP
+                </div>
+
+                <div class="xp-bar">
+
+                    <div class="xp-fill"></div>
+
+                </div>
+
+                <div class="xp-number">
+                    100 / 100
+                </div>
+
+                <p class="max-level">
+                 بالاترین سطح به دست آمده
+                </p>
+
+            </div>
+
+
+            <!-- SPECIAL ABILITIES -->
+
+            <div class="abilities">
+
+                <h3>
+                 قابلیت‌های ویژه
+                </h3>
+
+                <div class="ability-list">
+
+                    <div class="ability">
+                        🫂 آرام‌بخش
+                        <small>مثل یک آهنگ جز</small>
+                    </div>
+
+                    <div class="ability">
+                        ❤️ مهربان
+                    </div>
+
+                    <div class="ability">
+                        🛡️ حمایتگر
+                    </div>
+
+                    <div class="ability superhero">
+                        😂 خندون
+                    
+                    </div>
+
+                    <div class="ability superhero">
+                        🦊 کلک
+                     
+                    </div>
+
+                    <div class="ability">
+                        🧠 باهوش
+                    </div>
+
+                    <div class="ability">
+                        🗣️ اجتماعی
+                    </div>
+
+                    <div class="ability">
+                        💗 دلسوز
+                    </div>
+
+                    <div class="ability">
+                        🔥 بسیار خوشتیپ و سکسی
+                    </div>
+
+                    <div class="ability superhero">
+                        🦇 ابرقهرمان
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="special-unlocked">
+
+                SPECIAL ABILITY UNLOCKED
+
+                <strong>
+                    ❤️ بابای فوق العاده برای کودک درونم
+                </strong>
+
+            </div>
+
+
+            <button id="continueButton">
+                CONTINUE ▶
+            </button>
+
+        </section>
+<!-- =========================
+     CHARACTER MINI GAME
+========================= -->
+
+<section id="characterGame" class="character-game hidden">
+
+    <div class="game-header">
+
+        <p class="game-label">
+            🎮 بازی مخفی باز شد
+        </p>
+
+        <h2>
+            چرا من هر شخصیتی رو یاد تو می‌کنم؟ :)))
+        </h2>
+
+        <p class="game-intro">
+            من همه‌شون رو یاد تو می‌کنم...
+            <br>
+            ولی یکی‌شون رو از همه بیشتر.
+            <br>
+            ببین می‌تونی حدس بزنی کدومه؟ 👀❤️
+        </p>
+
+    </div>
+
+
+    <!-- START GAME -->
+
+    <div id="gameStart">
+
+        <button id="gameStartButton">
+            شروع بازی ▶
+        </button>
+
+    </div>
+
+
+    <!-- QUESTION -->
+
+    <div id="gameQuestion" class="game-question hidden">
+
+        <div class="round-number">
+            مرحله <span id="currentRound">1</span> از 5
+        </div>
+
+        <div class="category-title" id="categoryTitle">
+            دسته
+        </div>
+
+        <h3 id="questionText">
+            کدومشون بیشتر منو یاد تو می‌اندازه؟
+        </h3>
+
+        <div id="answerCards" class="answer-cards">
+        </div>
+
+
+        <!-- REVEAL -->
+
+        <div id="characterReveal" class="character-reveal hidden">
+
+            <div class="reveal-title">
+                🎯 درست گفتی!
+            </div>
+
+            <h3 id="characterName"></h3>
+
+            <p id="characterReason"></p>
+
+            <button id="nextRoundButton">
+                مرحله بعد ▶
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GAME COMPLETE -->
+
+    <div id="gameComplete" class="game-complete hidden">
+
+        <div class="complete-icon">
+            ❤️
+        </div>
+
+        <h2>
+            بازی تموم شد!
+        </h2>
+
+        <p>
+            دیدی؟
+            <br>
+            من تقریباً هر جا میرم یه چیزی پیدا می‌کنم
+            که منو یاد تو بندازه :)))
+        </p>
+
+        <p class="final-joojook">
+            البته یه دلیل از همه مهم‌تره...
+            <br>
+            چون تو جوجوک منیییییی 🐿️❤️
+        </p>
+
+        <button id="memoriesButton">
+            ادامه ▶
+        </button>
+
+    </div>
+</section>
+
+<section id="letterIntro" class="letter-intro hidden">
+
+    <div class="letter-intro-content">
+
+        <div class="letter-icon">
+            ❤️
+        </div>
+
+        <p class="letter-system">
+            NEW MEMORY UNLOCKED
+        </p>
+
+        <h2>
+            یه نامه برات دارم...
+        </h2>
+
+        <p class="letter-intro-text">
+            یه چیزی هست که می‌خوام خودت بخونیش. ❤️
+        </p>
+
+        <button id="openLetterButton">
+            باز کردن نامه ▶
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     LETTER PAGE
+========================= -->
+
+<section id="letterPage" class="letter-page hidden">
+
+    <!-- MEMORY PHOTOS -->
+
+    <div class="letter-photo photo-1">
+        <img src="AbolfazlJoojook/COWBOYY.jpg" alt="Abolfazl jijik">
+    </div>
+
+    <div class="letter-photo photo-2">
+        <img src="CHARACTERS/Papermann.png" alt="Paper Man">
+    </div>
+
+    <div class="letter-photo photo-3">
+        <img src="Gifs/arthur-morgan-arthur-morgan-birthday.gif" alt="Arthur Morgan">
+    </div>
+
+    <div class="letter-photo photo-4">
+        <img src="AbolfazlJoojook/JOOJOOGAK.jpg" alt="Jijike Marzieh">
+    </div>
+
+
+    <!-- LETTER -->
+
+    <div class="letter-container">
+
+        <div class="letter-top">
+            <span>MEMORY FILE</span>
+            <span>LEVEL 19</span>
+        </div>
+
+        <div class="letter-content">
+            <p>
+               ابوالفضل جونم. عشق زندگیم!
+این نامه برای توست. تو برای من چیزی بیشتر از دو حرف است. تو، که تو باشی وقتی راجع به تو باشد، پر رنگ و در دهن طنین انداز است. از تو ممنونم. از وجود تو ممنونم. روز سعید و فرخنده ی تولدت، بهانه ای است که بگویم تو چقدر معنی دار و مهم هستی. تو چقدر خوب، مهربان، دوست داشتنی و تلاشگر هستی و وجودت چقدر پربرکت است. شادی ات، شادی ام و غمت غمم است. هر روز از وجودت در زندگی ام از خدا بیشتر از دیروز متشکر هستم. ساده بگویم، بخشی از قلبم هستی که حتی بعد از مرگم هم نخواهد مرد، بخشی از وجودم در وطنم، جایی که وقتی آنجا باشی آن را کجا گذاشتم هستی.
+نوزده سال پیش، در همچین روزی، چشمهای زیبات رو باز کردی و قلب پاک و نازنازیت شروع به تپش کردند و از همه مهمتر، این بود که تو پا به این دنیا گذاشتی. برای این دنیا زیادی زیبا، سخت و گلادیاتور هستی!
+راستی گفتم گلادیاتور. قربان گلادیاتورت بروم. خودت میدانی منظورم چیست. همانطور محکم و استوار بمان، حتی در سختی ها. همیشه مفتخرت هستم.
+خلاصه ی کلامم، امروز فقط بهانه ای است که بگویم همه ی این زیبایی ها در یک روز متولد شد.
+گاهی ممکن است خودت را دست کم بگیری، اما یادت باشد، تو مخلوق خدا هستی. خدا بخشی از وجودش را در نفست قرار داده، مثل ساعت برندی که از بابت برند بودن، گران و باکیفیت است. تو مانند سازنده ات مهربان، بخشنده، و از همه مهمتر قابل اعتماد هستی.
+دوستت دارم، دوستت دارم، و تا همیشه دوستت دارم.
+چیزی جز خیر برام نبودی و امیدوارم تا همیشه در زندگی ام بمانی
+بهترین دوست و بهترین پدر دنیا برای کودک درونم.
+
+تولدت مبارک
+از طرف عزیزت، مرضیه
+            </p>
+
+        </div>
+
+        <div class="letter-bottom">
+            <span>❤️</span>
+            <span>END OF FILE</span>
+        </div>
+
+    </div>
+
+
+    <button id="letterNextButton" class="letter-next-button">
+        صفحه‌ی بعد ▶
+    </button>
+</section>
+<!-- =========================
+FAVORITE SCREENSHOTS
+========================= -->
+
+<section id="favoritePage" class="favorite-page hidden">
+
+    <div class="favorite-header">
+
+        <p class="favorite-system">
+            MEMORY ARCHIVE
+        </p>
+
+        <h2>
+            عکس‌های مورد علاقه‌م از تو ❤️
+        </h2>
+
+        <p>
+            همه ی عکسهاتو دوست دارم، ولی اینها واسم یه چیز دیگه ان :))
+        </p>
+
+    </div>
+
+
+    <div class="favorite-gallery">
+
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20250124_013426_770.jpg"
+                    alt="childhood1"
+                >
+
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20250124_013733_214.jpg"
+                    alt="childhood2"
+                >
+            </div>
+        </div>
+
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20250124_010728_849.jpg"
+                    alt="childhood3"
+                >
+            </div>
+        </div>
+
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20250124_015338_487.jpg"
+                    alt="childhood4"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/InShot_20240709_070536030.jpg"
+                    alt="funnyplease"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20260505_161134_300.jpg"
+                    alt="Khoshteep"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FUNNYPICS (1).jpg"
+                    alt="FN1"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FUNNYPICS (2).jpg"
+                    alt="FN2"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FUNNYPICS (3).jpg"
+                    alt="FN3"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FUNNYPICS (4).jpg"
+                    alt="FN4"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FUNNYPICS (5).jpg"
+                    alt="FN5"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/AbolfazJoanne - March 13 2024.jpg"
+                    alt="JOANNE"
+                >
+                <p>
+                    اینو خودم درست کردم - روز 13 مارس 2024
+                </p>
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/IMG_20260130_100326_541.jpg"
+                    alt="JOANNE"
+                >
+                <p>
+                    خییییلی بهت بجه میاد :))))
+                </p>
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/FIRSTPICCS.jpg"
+                    alt="FRST"
+                >
+                <p>
+                 جز اولین عکس هایی که ازت دارم و واقعا برام آیکانیکه.   
+                </p>
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/NEWVER.jpg"
+                    alt="NEWw"
+                >
+                <p>
+                    ورژن جدید این عکس با همون لباس ولی یک سال بعدش
+                                </p>
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/saaz.jpg"
+                    alt="szza"
+                >
+            </div>
+        </div>
+        <h2>
+            عکس‌های مورد علاقه‌م از کال هامون ❤️
+        </h2>
+        <p>
+            اینا واسم یه چیز دیگه ان... شکار لحظه ها و لحظاتی که لبخند رو لبامون میاره
+                </p>
+
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240422-130000.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+
+            <h3>
+            اولین اسکرین تاریخ کال هامون
+            </h3>
+
+            <p>
+                سر کلاس کامپیوتر بودم و بهم زنگ زدی... و منم جواب دادم. از موندگار ترین روزهای زندگیمون - 22 آوریل 2024  
+            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240509-211152.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+               واکنشت وقتی منو برای اولین بار بدون حجاب دیدی... خیلی اسکرین قشنگ و خاصی برامه. یه ترکیبی از شادی و غم.  
+            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240520-040555.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+                بیست می 2024 - این کال خیلی تو ذهنم موند. تا خود صبح بیدار بودم، محمد هم تو کال اومده بود. کلا کال باحالی واسم بود.  
+            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240714-235657.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+
+            <h3>
+            کال روز تولدم
+            </h3>
+
+            <p>
+                اینجا منو برده بودی حرم حضرت معصومه (سلام الله علیها)  یادش بخیررر :)
+            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240718-105558.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+
+            <h3>
+            کال توی کالج
+            </h3>
+
+            <p>
+               یادمه این دوران کمپ توی کالج میرفتم. بعد بهم زنگ زدی یه چند ساعتی صجبت کردیم. کتاب فیلمت رو هم بهم نشون دادی. یادش بخیرررر
+            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20240523-103424.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+                :)))            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20251108-115813.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+
+            <h3>
+بدون کپشن :))) خوشحالی محض :)))            </h3>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20260410-234910 (1).png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+آیکانیک (ازین مدل هزاررتا دارم و  همه شاهکار)            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20260419-093208.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+نوزده آوریل 2026 - اولین اسکرینی که حسین رو دیدمممم            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20260427-145656.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+
+            <h3>
+                روز امتحان زبان            </h3>
+
+            <p>
+اون روز خیلی هوامو داشتی و به لطف بودنت و کمک کردنت بود که تونستم به راحتی امتحانو بدم :)            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20260507-173418.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+هفت می 2026 - اینجا چایخانه حرم رفته بودی و بهم از حرم زنگ زدی. احساس بهشتی که داشتم...            </p>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/CALL/Screenshot_20260422-101416.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+            <p>
+کالت توی تلگرام وقتی بعد از شیش ماه وصل شده بودی... 22 آوریل. این عدد آشنا نیست؟            </p>
+        </div>
+        <h2>
+            عکس های مورد علاقم که توش شبیه افتادیم❤️
+        </h2>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20240422-141334.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20240714-024015.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20240719-041009.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20240731-020040.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20240828-165135.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250208-062558.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250303-121259.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+         <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250308-191741.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250317-135222.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250317-135644.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250319-093026.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20250323-002624.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20260413-100702.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20260413-102146.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20260413-152016.png"
+                    alt="Favorite memory"
+                >
+
+            </div>
+        </div>
+        <div class="favorite-card">
+
+            <div class="favorite-image">
+
+                <img
+                    src="AbolfazlJoojook/shabii/Screenshot_20260601-132705.png"
+                    alt="Favorite memory"
+                >
+            </div>
+        </div>
+    </div>
+
+
+    <button id="finalGiftButton">
+        ادامه ▶
+    </button>
+</section>
+
+<section id="finalGiftPage" class="final-gift-page hidden">
+<div class="final-gift-content">
+
+    <div class="gift-icon">
+        🎁
+    </div>
+
+    <p class="gift-system">
+        و بالاخره...
+    </p>
+
+    <h2>
+        یه هدیه‌ی کوچیک برات دارم...
+    </h2>
+
+    <div class="gift-message">
+
+        <p>
+            خیلی مشتاق بودم اینو برات درست کنم. ❤️
+        </p>
+
+        <p>
+            می‌دونم خیلی ناقابل هست
+            ولی واقعاً با عشق درستش کردم.
+        </p>
+
+        <p>
+            شاید نتونم همه‌ی چیزایی که دوست دارم
+            رو بهت هدیه بدم، امسال حتی در زمان مناسبش هم نشد
+            ولی چیزی بود که در توانم فراهمش کردم. امیدوارم از ته دلت دوستش داشته باشیییی :)
+        </p>
+
+        <strong>
+            امیدوارم دوستش داشته باشی جوجوک من. 🐿️❤️
+        </strong>
+
+    </div>
+
+
+    <div class="gift-file">
+
+        <div class="file-icon">
+            📦
+        </div>
+
+        <div class="file-info">
+
+            <span class="file-name">
+                Batman series.zip
+            </span>
+
+            <span class="file-description">
+                هدیه ی ویژه ی تو
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="SERIES/Batman series.zip"
+        download
+        id="downloadGiftButton"
+        class="download-gift-button"
+    >
+        دانلود هدیه ❤️
+    </a>
+
+
+    <p class="gift-footer">
+        پایان
+    </p>
+
+</div>
+
+</section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
